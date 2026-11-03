@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight, Github, Linkedin, Mail, GraduationCap, FileText } from "lucide-react";
+import { ArrowUpRight, Github, Linkedin, Mail, GraduationCap, FileText, Brain, Plane, Gamepad2, Clapperboard, Dumbbell } from "lucide-react";
 import { Container } from "@/components/Container";
 import { SectionHeading } from "@/components/SectionHeading";
 import { ProjectCard } from "@/components/ProjectCard";
@@ -15,6 +15,14 @@ const interests = [
   { title: "Visual Place Recognition", detail: "Robust place retrieval across viewpoint, appearance, and environment changes." },
   { title: "Representation Learning", detail: "Learning transferable visual features for retrieval and recognition." },
   { title: "Multimodal AI", detail: "Combining vision and language models for richer visual understanding." },
+];
+
+const beyondResearch = [
+  { title: "Chess", detail: "Enjoying strategy, problem-solving, and the occasional competitive game.", Icon: Brain },
+  { title: "Travelling", detail: "Discovering new places, cultures, and experiences.", Icon: Plane },
+  { title: "Video games", detail: "Enjoying gaming, immersive worlds, and interactive storytelling.", Icon: Gamepad2 },
+  { title: "Movies & shows", detail: "A fan of good storytelling, films, and TV series.", Icon: Clapperboard },
+  { title: "Fitness", detail: "Keeping active through strength training and regular workouts.", Icon: Dumbbell },
 ];
 
 export default function HomePage() {
@@ -53,7 +61,7 @@ export default function HomePage() {
           <div className="narrow">
             <SectionHeading eyebrow="A little about me" title="About" />
             <p className="body-large">{profile.about}</p>
-            <p className="body-copy">I am particularly interested in research that bridges strong visual representations with useful real-world applications—from geographic understanding and place recognition to visual forensics.</p>
+            <p className="body-copy">I enjoy building practical systems from advances in computer vision, visual representation learning, and multimodal AI.</p>
           </div>
         </Container>
       </section>
@@ -67,6 +75,20 @@ export default function HomePage() {
                 <span className="interest-number">0{index + 1}</span>
                 <h3>{item.title}</h3>
                 <p>{item.detail}</p>
+              </article>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      <section className="section" id="beyond-research">
+        <Container>
+          <SectionHeading eyebrow="Away from the screen" title="Beyond research" description="A few things I enjoy outside of work." />
+          <div className="beyond-grid">
+            {beyondResearch.map(({ title, detail, Icon }) => (
+              <article className="beyond-item" key={title}>
+                <span className="beyond-icon"><Icon size={19} strokeWidth={1.7} /></span>
+                <div><h3>{title}</h3><p>{detail}</p></div>
               </article>
             ))}
           </div>
