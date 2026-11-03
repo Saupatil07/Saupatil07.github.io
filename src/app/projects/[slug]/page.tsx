@@ -36,7 +36,6 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
           <div><h2>Methods & topics</h2><div className="tag-list">{project.methods.map((method) => <span className="tag" key={method}>{method}</span>)}</div></div>
           <div><h2>Highlights</h2><ul className="detail-list">{project.highlights.map((item) => <li key={item}>{item}</li>)}</ul></div>
           {project.links.length > 0 && <div><h2>Resources</h2><div className="inline-links">{project.links.map((link) => <a key={link.href} href={link.href} target="_blank" rel="noreferrer">{link.label} ↗</a>)}</div></div>}
-          <p className="disclaimer">This page describes a research direction and selected areas of work. Specific results and affiliations should be added only when cleared for public sharing.</p>
         </div>
       </Container>
     </section>
