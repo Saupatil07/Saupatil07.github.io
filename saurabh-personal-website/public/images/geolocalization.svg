@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="290" viewBox="0 0 520 290">
+<rect width="520" height="290" fill="#eaf0f6"/><path d="M85 210c75-90 145-110 230-65s95 75 160 30" fill="none" stroke="#315e91" stroke-width="3" stroke-dasharray="7 8"/><path d="M120 95l25 12-8 28-25-12zM330 180l25 12-8 28-25-12z" fill="#9bb5cf"/><circle cx="240" cy="150" r="28" fill="#315e91"/><path d="M240 132c-11 0-20 9-20 20 0 15 20 37 20 37s20-22 20-37c0-11-9-20-20-20z" fill="#fff"/><circle cx="240" cy="152" r="6" fill="#315e91"/>
+<text x="28" y="270" font-family="Arial,sans-serif" font-size="12" letter-spacing="1.5" fill="#315e91">IMAGE GEOLOCALIZATION</text>
+</svg>

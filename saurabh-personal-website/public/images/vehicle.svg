@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="290" viewBox="0 0 520 290">
+<rect width="520" height="290" fill="#eef1f4"/><path d="M105 175l28-55h210l32 55 32 16v50H73v-50z" fill="#b9c8d5" stroke="#62778d" stroke-width="5"/><path d="M155 125h165l25 48H130z" fill="#eaf0f5"/><circle cx="145" cy="240" r="22" fill="#62778d"/><circle cx="335" cy="240" r="22" fill="#62778d"/>
+<text x="28" y="270" font-family="Arial,sans-serif" font-size="12" letter-spacing="1.5" fill="#62778d">VEHICLE RECOGNITION</text>
+</svg>

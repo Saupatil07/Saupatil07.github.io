@@ -1,0 +1,1 @@
+Place your public CV PDF here and name it cv.pdf. The homepage links to /documents/cv.pdf.

@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="290" viewBox="0 0 520 290">
+<rect width="520" height="290" fill="#edf1f0"/><rect x="65" y="75" width="155" height="145" rx="5" fill="#cbd9d3"/><rect x="260" y="75" width="155" height="145" rx="5" fill="#d9e2de"/><path d="M65 175l48-65 42 44 28-34 37 55M260 175l48-65 42 44 28-34 37 55" fill="none" stroke="#52766d" stroke-width="5"/><path d="M225 145h30m-10-10 10 10-10 10" stroke="#52766d" stroke-width="3" fill="none"/>
+<text x="28" y="270" font-family="Arial,sans-serif" font-size="12" letter-spacing="1.5" fill="#52766d">VISUAL PLACE RECOGNITION</text>
+</svg>
