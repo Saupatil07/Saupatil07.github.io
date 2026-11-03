@@ -12,7 +12,6 @@ export default function PublicationsPage() {
       <Container>
         <SectionHeading eyebrow="Research output" title="Publications" description="Peer-reviewed papers, preprints, and public technical reports." />
         <PublicationList items={publications} />
-        <p className="editor-note">No publication entries have been added yet. Add verified public citations in <code>src/data/publications.ts</code>.</p>
       </Container>
     </section>
   );
