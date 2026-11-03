@@ -5,6 +5,7 @@ import { Container } from "@/components/Container";
 import { SectionHeading } from "@/components/SectionHeading";
 import { ProjectCard } from "@/components/ProjectCard";
 import { PublicationList } from "@/components/PublicationList";
+import { ChessStats } from "@/components/ChessStats";
 import { profile } from "@/data/profile";
 import { featuredProjects } from "@/data/projects";
 import { publications } from "@/data/publications";
@@ -92,6 +93,7 @@ export default function HomePage() {
               </article>
             ))}
           </div>
+          <ChessStats />
         </Container>
       </section>
 
