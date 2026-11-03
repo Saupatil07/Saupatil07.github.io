@@ -3,7 +3,7 @@ import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { profile } from "@/data/profile";
-
+import Script from "next/script";
 const siteUrl = "https://saupatil07.github.io";
 
 export const metadata: Metadata = {
@@ -26,6 +26,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <body>
+       <Script
+       src='https://static.cloudflareinsights.com/beacon.min.js' 
+       data-cf-beacon='{"token": "d09e0451995d4af5aaff631709774b14"}'
+       strategy="afterInteractive"
+       />
         <Navbar />
         <main>{children}</main>
         <Footer />
