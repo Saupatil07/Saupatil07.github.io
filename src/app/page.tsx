@@ -6,6 +6,7 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { ProjectCard } from "@/components/ProjectCard";
 import { PublicationList } from "@/components/PublicationList";
 import { ChessStats } from "@/components/ChessStats";
+import { PhotoSlideshow } from "@/components/PhotoSlideshow";
 import { profile } from "@/data/profile";
 import { featuredProjects } from "@/data/projects";
 import { publications } from "@/data/publications";
@@ -149,10 +150,7 @@ export default function HomePage() {
       <section className="section section-muted" id="photo-slideshow">
         <Container>
           <SectionHeading eyebrow="Travel, food & everyday moments" title="Photo stories" description="A rotating collection of places I’ve explored, meals I’ve enjoyed, and moments worth remembering." />
-          <div className="photo-slideshow-empty">
-            <p>Your photo slideshow will appear here once you share your pictures.</p>
-            <span>Travel · Food · Everyday moments</span>
-          </div>
+          <PhotoSlideshow />
         </Container>
       </section>    </>
   );
