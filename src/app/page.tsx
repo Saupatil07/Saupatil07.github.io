@@ -82,21 +82,6 @@ export default function HomePage() {
         </Container>
       </section>
 
-      <section className="section" id="beyond-research">
-        <Container>
-          <SectionHeading eyebrow="Away from the screen" title="Beyond research" description="A few things I enjoy outside of work." />
-          <div className="beyond-grid">
-            {beyondResearch.map(({ title, detail, Icon }) => (
-              <article className="beyond-item" key={title}>
-                <span className="beyond-icon"><Icon size={19} strokeWidth={1.7} /></span>
-                <div><h3>{title}</h3><p>{detail}</p></div>
-              </article>
-            ))}
-          </div>
-          <ChessStats />
-        </Container>
-      </section>
-
       <section className="section" id="projects">
         <Container>
           <div className="section-topline">
@@ -144,6 +129,31 @@ export default function HomePage() {
           </div>
         </Container>
       </section>
-    </>
+
+
+      <section className="section" id="beyond-research">
+        <Container>
+          <SectionHeading eyebrow="Away from the screen" title="Beyond research" description="A few things I enjoy outside of work." />
+          <div className="beyond-grid">
+            {beyondResearch.map(({ title, detail, Icon }) => (
+              <article className="beyond-item" key={title}>
+                <span className="beyond-icon"><Icon size={19} strokeWidth={1.7} /></span>
+                <div><h3>{title}</h3><p>{detail}</p></div>
+              </article>
+            ))}
+          </div>
+          <ChessStats />
+        </Container>
+      </section>
+
+      <section className="section section-muted" id="photo-slideshow">
+        <Container>
+          <SectionHeading eyebrow="Travel, food & everyday moments" title="Photo stories" description="A rotating collection of places I’ve explored, meals I’ve enjoyed, and moments worth remembering." />
+          <div className="photo-slideshow-empty">
+            <p>Your photo slideshow will appear here once you share your pictures.</p>
+            <span>Travel · Food · Everyday moments</span>
+          </div>
+        </Container>
+      </section>    </>
   );
 }
